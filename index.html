@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Week 3 Challenge</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		var stringToTest = "The quick brown fox jumped over the lazy dog";
+
+		function longestWord (sentence){
+
+			var splitWord = sentence.split(" ");
+			var longestWord = 0;
+
+			for (var i = 0; i < splitWord.length; i++) {
+				if(longestWord < splitWord[i].length){
+					longestWord = splitWord[i].length;
+				}
+				
+			}
+
+			return longestWord;
+		}
+		
+		document.write(longestWord(stringToTest));
+
+		
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>
